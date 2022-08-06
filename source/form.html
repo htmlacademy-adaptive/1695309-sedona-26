@@ -50,16 +50,16 @@
             <fieldset class="form__group group">
               <legend class="group__legend">Представьтесь:</legend>
               <ul class="group__list">
-                <li class="group__list-item field">
-                  <label class="field__label field-label" for="name">Имя*:</label>
+                <li class="group__item field">
+                  <label class="field__label" for="name">Имя*:</label>
                   <input class="field__input input" type="text" id="name" name="user-name" placeholder="Пётр" required/>
                 </li>
-                <li class="group__list-item field">
-                  <label class="field__label input-label" for="surname">Фамилия*:</label>
+                <li class="group__item field">
+                  <label class="field__label" for="surname">Фамилия*:</label>
                   <input class="field__input input" type="text" id="surname" name="user-surname" placeholder="Пустота" required/>
                 </li>
-                <li class="group__list-item field">
-                  <label class="field__label field-label" for="middle-name">Отчество:</label>
+                <li class="group__item field">
+                  <label class="field__label" for="middle-name">Отчество:</label>
                   <input class="field__input input" type="text" id="middle-name" name="user-middle-name" placeholder="Викторович"/>
                 </li>
               </ul>
@@ -67,12 +67,12 @@
             <fieldset class="form__group group">
               <legend class="group__legend">Контактная информация:</legend>
               <ul class="group__list">
-                <li class="group__list-item field field--phone">
-                  <label class="field__label field-label" for="phone">Контактный телефон*:</label>
+                <li class="group__item field field--phone">
+                  <label class="field__label" for="phone">Контактный телефон*:</label>
                   <input class="field__input input" type="tel" id="phone" name="user-phone" placeholder="Введите телефон" required/>
                 </li>
-                <li class="group__list-item field field--email">
-                  <label class="field__label field-label" for="email">Электронная почта*:</label>
+                <li class="group__item field field--email">
+                  <label class="field__label" for="email">Электронная почта*:</label>
                   <input class="field__input input" type="email" id="email" name="user-email" placeholder="Введите e-mail" required/>
                 </li>
               </ul>
@@ -80,20 +80,20 @@
             <fieldset class="form__group group">
               <legend class="group__legend">Ваше общее впечатление:</legend>
               <ul class="group__list">
-                <li class="group__list-item field">
+                <li class="group__item field">
                   <label class="field__label field-label">Скорее положительное
                     <input class="field__input input" type="radio" name="total" value="positive" checked/>
                     <span class="field__custom-radio"></span>
                   </label>
                 </li>
-                <li class="group__list-item field">
-                  <label class="field__label field-label">Скорее отрицательное
+                <li class="group__item field">
+                  <label class="field__label">Скорее отрицательное
                     <input class="field__input input" type="radio" name="total" value="negative"/>
                     <span class="field__custom-radio"></span>
                   </label>
                 </li>
-                <li class="group__list-item field">
-                  <label class="field__label field-label">Затрудняюсь ответить
+                <li class="group__item field">
+                  <label class="field__label">Затрудняюсь ответить
                     <input class="field__input input" type="radio" name="total" value="neutral"/>
                     <span class="field__custom-radio"></span>
                   </label>
@@ -105,26 +105,26 @@
                 Посещенные достопримечательности:
               </legend>
               <ul class="group__list">
-                <li class="group__list-item field">
-                  <label class="field__label field-label">Мост Дьявола
+                <li class="group__item field">
+                  <label class="field__label">Мост Дьявола
                     <input class="field__input input" type="checkbox" name="devils-bridge" checked/>
                     <span class="field__custom-checkbox"></span>
                   </label>
                 </li>
-                <li class="group__list-item field">
-                  <label class="field__label field-label">Гора-Колокол
+                <li class="group__item field">
+                  <label class="field__label">Гора-Колокол
                     <input class="field__input input" type="checkbox" name="bell-rock" checked/>
                     <span class="field__custom-checkbox"></span>
                   </label>
                 </li>
-                <li class="group__list-item field">
-                  <label class="field__label field-label">Слайд-парк
+                <li class="group__item field">
+                  <label class="field__label">Слайд-парк
                     <input class="field__input input" type="checkbox" name="slide-park" checked/>
                     <span class="field__custom-checkbox"></span>
                   </label>
                 </li>
-                <li class="group__list-item field">
-                  <label class="field__label field-label">Красные скалы
+                <li class="group__item field">
+                  <label class="field__label">Красные скалы
                     <input class="field__input input" type="checkbox" name="red-mountain"/>
                     <span class="field__custom-checkbox"></span>
                   </label>
@@ -132,7 +132,7 @@
               </ul>
             </fieldset>
             <div class="form__textarea-wrap field">
-              <label class="field__label field-label" for="text-answer">Опишите свои эмоции:</label>
+              <label class="field__label" for="text-answer">Опишите свои эмоции:</label>
               <textarea class="field__textarea" name="text-answer" id="text-answer" cols="30" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
             </div>
             <button class="form__button button" type="submit">
