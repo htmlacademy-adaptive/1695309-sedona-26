@@ -1,0 +1,27 @@
+.photo-card {
+  padding: 25px 20px;
+  border-top: 1px solid $grey-border-second;
+}
+
+.photo-card__image {
+  object-fit: cover;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+.photo-card__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.photo-card__author {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  color: $black;
+}

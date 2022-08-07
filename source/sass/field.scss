@@ -11,6 +11,7 @@
     background-image: url("../img/form/phone.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    z-index: -1;
   }
 
   &--mail::after {
@@ -23,6 +24,7 @@
     background-image: url("../img/form/mail.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    z-index: -1;
   }
 }
 
@@ -39,11 +41,16 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+    cursor: pointer;
   }
 }
 
 .field__input {
   width: 100%;
+
+  &--size-s {
+    width: 80%;
+  }
 }
 
 .field__custom {
