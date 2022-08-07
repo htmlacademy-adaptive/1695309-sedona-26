@@ -1,0 +1,42 @@
+.navigation {
+  font-family: inherit;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.navigation__list {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  list-style-type: none;
+
+  &--closed {
+    display: none;
+  }
+}
+
+
+.navigation__link {
+  display: block;
+  padding: 18px 78px;
+  color: inherit;
+  background-color: $blue;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+}
+
+.navigation__toggle {
+  @include visually-hidden;
+}

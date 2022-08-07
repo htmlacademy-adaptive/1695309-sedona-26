@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+  text-align: center;
+}
+
+.logo__image {
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+  vertical-align: middle;
+}

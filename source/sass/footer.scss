@@ -1,0 +1,32 @@
+.footer {
+  padding: 22px 76px 28px;
+  text-align: center;
+}
+
+.footer__hashtag {
+  display: block;
+  margin-bottom: 34px;
+  color: $black;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer__social-list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo-link {
+  color: $black;
+}

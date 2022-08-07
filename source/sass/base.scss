@@ -1,0 +1,9 @@
+.visually-hidden {
+  @include visually-hidden;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}

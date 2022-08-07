@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  border: none;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $white;
+  background-color: $blue;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--search {
+    padding: 14px 46px 18px;
+  }
+
+  &--form {
+    padding: 18px 34px 14px;
+  }
+
+  &--modal {
+    padding: 18px 64px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

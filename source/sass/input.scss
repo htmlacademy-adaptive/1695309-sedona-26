@@ -1,0 +1,14 @@
+.input {
+  border: none;
+  padding: 16px;
+  background-color: $grey-bg;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: inherit;
+  font-weight: 700;
+  color: $grey-opac;
+
+  &::placeholder {
+    color: $grey-opac;
+  }
+}

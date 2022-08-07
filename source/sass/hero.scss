@@ -1,0 +1,25 @@
+.hero {
+  position: relative;
+  padding: 90px 20px 73px;
+  background-image: url("../img/hero/hero-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 57px;
+    width: 100%;
+    position: absolute;
+    background-image: url("../img/hero/hero-bg-mask.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  &--small {
+    padding: 68px 46px;
+    background-image: url("../img/hero/hero-bg-small.jpg");
+    background-position: 0 100%;
+  }
+}
