@@ -23,4 +23,18 @@
     font-size: 18px;
     line-height: 26px;
   }
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    color: $white-opac;
+    background-color: $blue-dark;
+  }
+
+  &:disabled {
+    background-color: $grey-second;
+    cursor: auto;
+  }
 }

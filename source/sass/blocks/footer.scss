@@ -21,12 +21,18 @@
   list-style-type: none;
 }
 
-.footer__logo-wrap {
+.footer__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer__logo-link {
+  text-decoration: none;
   color: $black;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $grey-down;
+  }
 }

@@ -65,6 +65,14 @@
   &--radio {
     border-radius: 50%;
   }
+
+  &:hover {
+    background-color: $grey-second;
+  }
+
+  &:active {
+    background-color: $grey-dark-second;
+  }
 }
 
 .field__radio:checked + .field__custom--radio::before {
@@ -88,4 +96,18 @@
   width: 22px;
   height: 16px;
   background-image: url("../img/form/tick.svg");
+}
+
+.field__label--custom:active .field__custom--radio::before {
+  background-color: $light-black-opac;
+}
+
+.field__label--checkbox:active {
+  .field__custom {
+    background-color: $grey-dark-second;
+  }
+
+  .field__custom--checkbox::before {
+    opacity: 0.7;
+  }
 }

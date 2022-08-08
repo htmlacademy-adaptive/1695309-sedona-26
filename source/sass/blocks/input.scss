@@ -6,9 +6,19 @@
   line-height: 26px;
   font-family: inherit;
   font-weight: 700;
-  color: $grey-opac;
+  color: $black;
 
   &::placeholder {
     color: $grey-opac;
+  }
+
+  &:hover {
+    background-color: $grey-second;
+  }
+
+  &:focus:not(:placeholder-shown) {
+    outline: 3px solid $grey-second;
+    outline-offset: -3px;
+    background-color: $white;
   }
 }

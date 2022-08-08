@@ -12,4 +12,13 @@
   color: $white;
   background-color: $blue;
   padding: 12px;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    color: $white-opac;
+    background-color: $blue-dark;
+  }
 }
