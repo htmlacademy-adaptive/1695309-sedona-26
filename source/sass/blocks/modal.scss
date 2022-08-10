@@ -1,0 +1,35 @@
+.modal {
+  max-width: 320px;
+  margin: auto;
+  background-color: #ffffff;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.modal__text {
+  padding: 45px 42px 35px;
+  text-align: center;
+}
+
+.modal__title {
+  margin-bottom: 24px;
+}
+
+.modal__description {
+  margin-bottom: 28px;
+
+  &--success {
+    margin-bottom: 0;
+  }
+}
+
+.modal__button-wrap {
+  padding: 20px;
+  background-color: $grey-bg;
+}
+
+.modal__button {
+  margin: 0 auto;
+}

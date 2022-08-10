@@ -1,0 +1,20 @@
+.gallery__text {
+  padding: 30px 12px 18px;
+  text-align: center;
+}
+
+.gallery__title {
+  margin-bottom: 24px;
+}
+
+.gallery__description {
+  margin-bottom: 20px;
+}
+
+.gallery__list {
+  @include list-reset;
+}
+
+.gallery__video {
+  border-top: 1px solid $grey-second;
+}

@@ -1,0 +1,36 @@
+.footer {
+  padding: 22px 20px 28px;
+  text-align: center;
+}
+
+.footer__hashtag {
+  display: block;
+  margin-bottom: 34px;
+  color: $black;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer__social-list {
+  @include list-reset;
+  margin-bottom: 40px;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $grey-active;
+  }
+}

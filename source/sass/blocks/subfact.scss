@@ -1,0 +1,41 @@
+.subfact__text {
+  position: relative;
+  padding-left: 48px;
+
+  &--home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/subfact/home-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/subfact/food-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--souvenir::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/subfact/souvenir-icon.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.subfact__title {
+  margin-bottom: 16px;
+}

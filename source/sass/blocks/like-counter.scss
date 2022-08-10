@@ -1,0 +1,23 @@
+.like-counter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/gallery/like-icon.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.like-counter__number {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $black;
+}
