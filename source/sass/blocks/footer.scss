@@ -15,10 +15,8 @@
 }
 
 .footer__social-list {
-  margin: 0;
+  @include list-reset;
   margin-bottom: 40px;
-  padding: 0;
-  list-style-type: none;
 }
 
 .footer__logo {
@@ -33,6 +31,6 @@
   }
 
   &:active {
-    color: $grey-down;
+    color: $grey-active;
   }
 }

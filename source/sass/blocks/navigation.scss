@@ -12,14 +12,12 @@
 }
 
 .navigation__list {
+  @include list-reset;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0;
-  padding: 0;
   z-index: 1;
-  list-style-type: none;
 }
 
 .navigation__link {
@@ -36,7 +34,7 @@
   }
 
   &:active {
-    color: $white-opac;
+    color: $white-opacity;
     background-color: $blue-dark;
   }
 }
@@ -84,28 +82,28 @@
 
 .navigation__toggle:hover {
   .navigation__toggle-dash {
-    background-color: $blue-opac;
+    background-color: $blue-opacity;
   }
 
   .navigation__toggle-dash::before {
-    background-color: $blue-opac;
+    background-color: $blue-opacity;
   }
 
   .navigation__toggle-dash::after {
-    background-color: $blue-opac;
+    background-color: $blue-opacity;
   }
 }
 
 .navigation__toggle:active {
   .navigation__toggle-dash {
-    background-color: $blue-opac-light;
+    background-color: $blue-opacity-light;
   }
 
   .navigation__toggle-dash::before {
-    background-color: $blue-opac-light;
+    background-color: $blue-opacity-light;
   }
 
   .navigation__toggle-dash::after {
-    background-color: $blue-opac-light;
+    background-color: $blue-opacity-light;
   }
 }

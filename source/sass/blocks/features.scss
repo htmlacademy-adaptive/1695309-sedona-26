@@ -1,7 +1,5 @@
 .features__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include list-reset;
 }
 
 .features__title {

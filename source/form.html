@@ -18,10 +18,10 @@
         <nav class="navigation navigation--closed">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="./index.html" target="_blank" rel="noopener noreferrer">Главная</a>
+              <a class="navigation__link" href="./index.html">Главная</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="./gallery.html" target="_blank" rel="noopener noreferrer">Фото и видео</a>
+              <a class="navigation__link" href="./gallery.html">Фото и видео</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current"
@@ -48,8 +48,8 @@
           </div>
 
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="form__group group group--line">
-              <legend class="group__legend title">Представьтесь:</legend>
+            <div class="form__group group group--line">
+              <h2 class="group__legend title">Представьтесь:</h2>
               <ul class="group__list">
                 <li class="group__item field">
                   <label class="field__label" for="name">Имя*:</label>
@@ -64,9 +64,9 @@
                   <input class="field__input input" type="text" id="middle-name" name="user-middle-name" placeholder="Викторович"/>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="form__group group">
-              <legend class="group__legend title">Контактная информация:</legend>
+            </div>
+            <div class="form__group group">
+              <h2 class="group__legend title">Контактная информация:</h2>
               <ul class="group__list">
                 <li class="group__item field field--phone">
                   <label class="field__label" for="phone">Контактный телефон*:</label>
@@ -77,9 +77,9 @@
                   <input class="field__input input field__input--size-s" type="email" id="email" name="user-email" placeholder="Введите e-mail" required/>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="form__group group">
-              <legend class="group__legend title">Ваше общее впечатление:</legend>
+            </div>
+            <div class="form__group group">
+              <h2 class="group__legend title">Ваше общее впечатление:</h2>
               <ul class="group__list">
                 <li class="group__item field">
                   <label class="field__label field__label--custom">
@@ -101,11 +101,9 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="form__group group">
-              <legend class="group__legend title">
-                Посещенные достопримечательности:
-              </legend>
+            </div>
+            <div class="form__group group">
+              <h2 class="group__legend title">Посещенные достопримечательности:</h2>
               <ul class="group__list">
                 <li class="group__item field">
                   <label class="field__label field__label--custom field__label--checkbox">Мост Дьявола
@@ -132,7 +130,7 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
             <div class="form__textarea-wrap textarea">
               <label class="textarea__label title" for="text-answer">Опишите свои эмоции:</label>
               <textarea class="textarea__input input" name="text-answer" id="text-answer" cols="23" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>

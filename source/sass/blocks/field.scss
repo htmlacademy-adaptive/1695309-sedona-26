@@ -30,7 +30,7 @@
 
 .field__label {
   padding-left: 16px;
-  color: $light-black;
+  color: $black-light;
   font-size: 14px;
   line-height: 21px;
 
@@ -99,7 +99,7 @@
 }
 
 .field__label--custom:active .field__custom--radio::before {
-  background-color: $light-black-opac;
+  background-color: $black-light-opacity;
 }
 
 .field__label--checkbox:active {

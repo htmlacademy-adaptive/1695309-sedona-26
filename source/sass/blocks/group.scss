@@ -1,25 +1,17 @@
 .group {
-  border: 0;
-  margin: 0;
   padding: 24px 20px 40px;
   border-top: 1px solid $grey-second;
 }
 
 .group__legend {
-  float: left;
-  padding: 0;
-  margin: 0;
   margin-bottom: 20px;
-  width: 100%;
   text-align: center;
 }
 
 .group__list {
+  @include list-reset;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
