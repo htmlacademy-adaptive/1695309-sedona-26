@@ -6,6 +6,11 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 154px 90px;
+    background-image: url("../img/hero/hero-bg-tablet.jpg");
+  }
+
   &::after {
     content: "";
     left: 0;
@@ -13,14 +18,28 @@
     height: 57px;
     width: 100%;
     position: absolute;
-    background-image: url("../img/hero/hero-bg-mask.png");
+    background-image: url("../img/hero/hero-mask.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/hero/hero-mask-tablet.png");
+    }
   }
 
   &--small {
     padding: 52px 46px 60px;
     background-image: url("../img/hero/hero-bg-small.jpg");
     background-position: 0 100%;
+  }
+}
+
+.hero__image-text {
+  display: block;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 462px;
+    height: 350px;
   }
 }

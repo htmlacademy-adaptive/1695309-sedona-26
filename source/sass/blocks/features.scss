@@ -1,5 +1,16 @@
 .features__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.features__item {
+  @media (min-width: $tablet-width) {
+    flex-basis: 33.33%;
+  }
 }
 
 .features__title {
@@ -9,4 +20,8 @@
 .features__text {
   padding: 32px 20px 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 120px 56px;
+  }
 }

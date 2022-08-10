@@ -1,6 +1,12 @@
 .sublist {
+  @include list-reset;
   display: flex;
   flex-direction: column;
   gap: 22px;
   padding: 22px 18px 52px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+  }
 }

@@ -2,6 +2,13 @@
   position: relative;
   background-color: $grey;
   text-align: center;
+
+  &--row {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      width: 100%;
+    }
+  }
 }
 
 .fact--light {
@@ -20,6 +27,10 @@
     background-image: url("../img/features/mask-after.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -54,5 +65,9 @@
 
   &--line {
     border-bottom: 1px solid $grey-border;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 }
