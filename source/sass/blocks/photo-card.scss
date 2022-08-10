@@ -4,13 +4,12 @@
 }
 
 .photo-card__image {
+  display: block;
   object-fit: cover;
-  vertical-align: middle;
   margin-bottom: 15px;
 }
 
 .photo-card__title {
-  margin: 0;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 21px;

@@ -1,17 +1,13 @@
 .search {
-  padding: 38px 0 50px;
   text-align: center;
 }
 
 .search__wrap {
-  max-width: 280px;
-  margin: 0 auto;
+  padding: 38px 18px 50px;
 }
 
 .search__title {
-  margin: 0;
   margin-bottom: 24px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -20,6 +16,6 @@
 }
 
 .search__description {
-  margin: 0;
   margin-bottom: 32px;
 }
+

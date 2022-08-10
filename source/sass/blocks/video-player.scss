@@ -1,5 +1,6 @@
 .video-player__preview {
+  display: block;
   object-fit: cover;
-  vertical-align: middle;
   cursor: pointer;
+  margin: 0 auto;
 }

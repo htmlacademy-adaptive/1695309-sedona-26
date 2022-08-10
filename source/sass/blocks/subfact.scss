@@ -1,8 +1,6 @@
 .subfact__text {
   position: relative;
   padding-left: 48px;
-  max-width: 298px;
-  margin: 0 auto;
 
   &--home::before {
     content: "";
@@ -39,10 +37,6 @@
 }
 
 .subfact__title {
-  margin: 0;
   margin-bottom: 16px;
 }
 
-.subfact__description {
-  margin: 0;
-}

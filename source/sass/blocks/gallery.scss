@@ -1,17 +1,13 @@
 .gallery__text {
-  max-width: 295px;
-  padding: 30px 0 18px;
-  margin: 0 auto;
+  padding: 30px 12px 18px;
   text-align: center;
 }
 
 .gallery__title {
-  margin: 0;
   margin-bottom: 24px;
 }
 
 .gallery__description {
-  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -23,8 +19,4 @@
 
 .gallery__video {
   border-top: 1px solid $grey-second;
-}
-
-.gallery__video-player {
-  text-align: center;
 }

@@ -24,12 +24,7 @@
 }
 
 .fact__title {
-  margin: 0;
   margin-bottom: 12px;
-}
-
-.fact__description {
-  margin: 0;
 }
 
 .fact__number {
@@ -46,14 +41,12 @@
 }
 
 .fact__image {
+  display: block;
   object-fit: cover;
-  vertical-align: middle;
 }
 
 .fact__text {
-  max-width: 286px;
-  padding: 40px 16px 35px;
-  margin: 0 auto;
+  padding: 40px 20px 35px;
 
   &--masked {
     padding-top: 70px;

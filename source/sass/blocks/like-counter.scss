@@ -2,12 +2,11 @@
   position: relative;
   display: flex;
   align-items: center;
+  gap: 14px;
 
   &::before {
     content: "";
-    position: absolute;
-    top: -2px;
-    left: 0;
+    display: block;
     width: 23px;
     height: 23px;
     background-image: url("../img/gallery/like-icon.svg");
@@ -16,7 +15,6 @@
 }
 
 .like-counter__number {
-  padding-left: 40px;
   margin: 0;
   font-size: 14px;
   line-height: 21px;
