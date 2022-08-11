@@ -11,11 +11,15 @@
     background-image: url("../img/hero/hero-bg-tablet.jpg");
   }
 
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero/hero-bg-desktop.jpg");
+  }
+
   &::after {
     content: "";
     left: 0;
     bottom: 0;
-    height: 57px;
+    height: 56px;
     width: 100%;
     position: absolute;
     background-image: url("../img/hero/hero-mask.png");
@@ -24,6 +28,10 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/hero/hero-mask-tablet.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/hero/hero-mask-desktop.png");
     }
   }
 
@@ -37,6 +45,7 @@
 .hero__image-text {
   display: block;
   object-fit: cover;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 462px;
