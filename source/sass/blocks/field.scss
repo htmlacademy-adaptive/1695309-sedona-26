@@ -5,30 +5,29 @@
     content: "";
     position: absolute;
     right: 0;
+    width: 21%;
     height: 58px;
-    width: 58px;
     background-color: $grey-dark;
     background-image: url("../img/form/phone.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    z-index: -1;
   }
 
   &--mail::after {
     content: "";
     position: absolute;
     right: 0;
+    width: 21%;
     height: 58px;
-    width: 58px;
     background-color: $grey-dark;
     background-image: url("../img/form/mail.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    z-index: -1;
   }
 }
 
 .field__label {
+  display: block;
   padding-left: 16px;
   color: $black-light;
   font-size: 14px;
@@ -49,7 +48,7 @@
   width: 100%;
 
   &--size-s {
-    width: 80%;
+    width: 79%;
   }
 }
 
