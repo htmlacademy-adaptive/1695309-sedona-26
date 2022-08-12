@@ -1,10 +1,22 @@
 .gallery__text {
   padding: 30px 12px 18px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 512px;
+    padding: 60px 18px 66px;
+    margin: 0 auto;
+  }
 }
 
 .gallery__title {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
 }
 
 .gallery__description {
@@ -13,8 +25,31 @@
 
 .gallery__list {
   @include list-reset;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .gallery__video {
   border-top: 1px solid $grey-second;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+}
+
+.gallery__video-player {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
 }

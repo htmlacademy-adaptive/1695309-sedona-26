@@ -1,6 +1,12 @@
 .video-player__preview {
+  width: 100%;
   display: block;
   object-fit: cover;
   cursor: pointer;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
 }

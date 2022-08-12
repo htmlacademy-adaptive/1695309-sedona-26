@@ -2,12 +2,14 @@
   padding: 24px 0 40px;
   border-top: 1px solid $grey-second;
 
-  @media (min-width: $tablet-width) {
-    &--experience {
+  &--experience {
+    @media (min-width: $tablet-width) {
       grid-column: 1 / -1;
     }
+  }
 
-    &--visited {
+  &--visited {
+    @media (min-width: $tablet-width) {
       grid-column: 1 / -1;
     }
   }

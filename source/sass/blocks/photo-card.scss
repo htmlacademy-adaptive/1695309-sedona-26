@@ -1,16 +1,47 @@
 .photo-card {
-  padding: 25px 20px;
+  padding: 25px 0;
   border-top: 1px solid $grey-second;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-top: none;
+
+    &:first-child {
+      grid-column: 1 / -1;
+    }
+  }
 }
 
 .photo-card__image {
+  width: 100%;
   display: block;
   object-fit: cover;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.photo-card__info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $grey-bg;
+  }
+}
+
+.photo-card__text {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .photo-card__title {
-  margin-bottom: 10px;
   font-size: 14px;
   line-height: 21px;
   color: $black;
@@ -19,7 +50,6 @@
 
 .photo-card__author {
   margin: 0;
-  margin-bottom: 10px;
   font-size: 14px;
   line-height: 21px;
   color: $black;

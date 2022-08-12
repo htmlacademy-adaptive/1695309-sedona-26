@@ -11,6 +11,11 @@
 
 .feedback__title {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .feedback__form {
