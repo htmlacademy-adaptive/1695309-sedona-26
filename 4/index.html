@@ -12,11 +12,11 @@
         <a class="header__logo logo" href="#">
           <img class="logo__image" src="./img/logo.svg" width="185" height="96" alt="Логотип Седоны."/>
         </a>
-        <button class="navigation__toggle" type="button">
-          <span class="navigation__toggle-dash"></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <nav class="navigation navigation--closed">
+        <nav class="navigation navigation--closed navigation--nojs">
+          <button class="navigation__toggle" type="button">
+            <span class="navigation__toggle-dash"></span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current">Главная</a>
@@ -82,20 +82,22 @@
               </ul>
             </li>
 
-            <li class="fact fact--row fact--reversed">
-              <div class="fact__card fact__card--light fact__card--line">
-                <div class="fact__text">
-                  <h2 class="fact__title title title--light">Там есть мост дьявола</h2>
-                  <span class="fact__number">№2</span>
-                  <p class="fact__description description description--light">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <li class="features__item-wrap">
+              <div class="fact fact--row fact--reversed">
+                <div class="fact__card fact__card--light fact__card--line">
+                  <div class="fact__text">
+                    <h2 class="fact__title title title--light">Там есть мост дьявола</h2>
+                    <span class="fact__number">№2</span>
+                    <p class="fact__description description description--light">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  </div>
                 </div>
+                <img class="fact__image" src="./img/features/features-002.jpg" width="320" height="256" alt="Мост дьявола."/>
               </div>
-              <img class="fact__image" src="./img/features/features-002.jpg" width="320" height="256" alt="Мост дьявола."/>
             </li>
 
             <li class="features__item fact">
-              <div class="fact__card fact__card--padding-size-l">
-                <div class="fact__text fact__text--line">
+              <div class="fact__card">
+                <div class="fact__text fact__text--line fact__text--margin">
                   <h2 class="fact__title title">Небольшая площадь</h2>
                   <span class="fact__number">№3</span>
                   <p class="fact__description description">Все интересные места находятся очень близко</p>
@@ -139,7 +141,7 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Посмотреть на карте</h2>
-          <img class="map__frame" src="./img/map.jpg" width="320" height="350" alt=""/>
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52176.22472019134!2d-111.64306413310126!3d35.181202485524445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2z0KTQu9Cw0LPRgdGC0LDRhNGELCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660628310159!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
       </main>
 
@@ -187,5 +189,6 @@
         </a>
       </footer>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
