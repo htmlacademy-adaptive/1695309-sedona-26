@@ -1,18 +1,6 @@
 .group {
   padding: 24px 0 40px;
   border-top: 1px solid $grey-second;
-
-  &--experience {
-    @media (min-width: $tablet-width) {
-      grid-column: 1 / -1;
-    }
-  }
-
-  &--visited {
-    @media (min-width: $tablet-width) {
-      grid-column: 1 / -1;
-    }
-  }
 }
 
 .group__legend {
@@ -31,9 +19,11 @@
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      padding: 0 36px;
     }
 
     @media (min-width: $desktop-width) {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -42,9 +32,11 @@
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      padding: 0 84px;
     }
 
     @media (min-width: $desktop-width) {
+      display: grid;
       grid-template-columns: repeat(4, 1fr);
     }
   }

@@ -1,21 +1,17 @@
 .navigation {
   width: 100%;
   position: absolute;
-  display: none;
+  display: block;
   top: 0;
   left: 0;
   z-index: 1;
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    display: block;
-  }
 }
 
 .navigation__list {
   @include list-reset;
 
   @media (min-width: $tablet-width) {
+    display: block;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -79,6 +75,8 @@
 }
 
 .navigation__toggle {
+  position: absolute;
+  right: 0;
   display: block;
   border: none;
   background-color: transparent;
@@ -93,7 +91,25 @@
   }
 }
 
-.navigation__toggle-dash {
+@media (max-width: $mobile-only) {
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__toggle {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__list {
+    display: block;
+  }
+
+  .navigation--nojs .navigation {
+    position: static;
+  }
+}
+
+.navigation--closed .navigation__toggle-dash {
   position: absolute;
   display: block;
   width: 23px;
@@ -101,7 +117,7 @@
   background-color: $blue;
 }
 
-.navigation__toggle-dash::before {
+.navigation--closed .navigation__toggle-dash::before {
   content: "";
   position: absolute;
   top: 9px;
@@ -111,7 +127,7 @@
   background-color: $blue;
 }
 
-.navigation__toggle-dash::after {
+.navigation--closed .navigation__toggle-dash::after {
   content: "";
   position: absolute;
   top: -9px;
@@ -121,7 +137,38 @@
   background-color: $blue;
 }
 
-.navigation__toggle:hover {
+.navigation--opened .navigation__toggle-dash {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: $white;
+  transform: rotate(45deg);
+}
+
+.navigation--opened .navigation__toggle-dash::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 4px;
+  transform: rotate(90deg);
+  background-color: $white;
+}
+
+.navigation--opened .navigation__toggle:hover {
+  .navigation__toggle-dash {
+    opacity: 0.6;
+  }
+}
+
+.navigation--opened .navigation__toggle:active {
+  .navigation__toggle-dash {
+    opacity: 0.3;
+  }
+}
+
+.navigation--closed .navigation__toggle:hover {
   .navigation__toggle-dash {
     background-color: $blue-opacity;
   }
@@ -135,7 +182,7 @@
   }
 }
 
-.navigation__toggle:active {
+.navigation--closed .navigation__toggle:active {
   .navigation__toggle-dash {
     background-color: $blue-opacity-light;
   }
@@ -148,3 +195,5 @@
     background-color: $blue-opacity-light;
   }
 }
+
+

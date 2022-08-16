@@ -1,3 +1,17 @@
+.subfact {
+  padding: 22px 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 60px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding: 60px 60px 80px;
+  }
+}
+
 .subfact__text {
   position: relative;
   padding-left: 48px;
