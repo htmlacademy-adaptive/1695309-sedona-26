@@ -1,6 +1,17 @@
 .footer {
   padding: 22px 20px 28px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 114px;
+  }
 }
 
 .footer__hashtag {
@@ -12,11 +23,21 @@
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__social-list {
   @include list-reset;
+  max-width: 200px;
+  margin: 0 auto;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__logo {

@@ -8,14 +8,14 @@
   <body class="body">
     <div class="container">
       <header class="header">
-        <a class="header__logo logo" href="./index.html">
+        <a class="header__logo logo" href="#">
           <img class="logo__image" src="./img/logo.svg" width="185" height="96" alt="Логотип Седоны."/>
         </a>
-        <button class="navigation__toggle" type="button">
-          <span class="navigation__toggle-dash"></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <nav class="navigation navigation--closed">
+        <nav class="navigation navigation--closed navigation--nojs">
+          <button class="navigation__toggle" type="button">
+            <span class="navigation__toggle-dash"></span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="./index.html">Главная</a>
@@ -35,7 +35,7 @@
 
       <main class="main">
         <div class="hero hero--small">
-          <img class="hero__image-text" src="./img/hero/hero-text-small.svg" width="230" height="40" alt="На картинке написан текст: Sedona."/>
+          <img class="hero__image-text hero__image-text--small" src="./img/hero/hero-text-small.svg" width="230" height="40" alt="На картинке написан текст: Sedona."/>
         </div>
 
         <section class="gallery">
@@ -49,42 +49,58 @@
           <ul class="gallery__list">
             <li class="gallery__item photo-card">
               <a href="#" class="photo-card__link">
-                <img class="photo-card__image" src="./img/gallery/gallery-01.jpg" width="280" height="280" alt="Дорога и горы."/>
+                <img class="photo-card__image" src="./img/gallery/gallery-001.jpg" width="280" height="280" alt="Дорога и горы."/>
               </a>
-              <h3 class="photo-card__title title">Неродные просторы</h3>
-              <p class="photo-card__author">Автор фото: Борис</p>
-              <div class="photo-card__like-counter like-counter">
-                <p class="like-counter__number">1350</p>
+              <div class="photo-card__info">
+                <div class="photo-card__text">
+                  <h3 class="photo-card__title title">Неродные просторы</h3>
+                  <p class="photo-card__author">Автор фото: Борис</p>
+                </div>
+                <div class="photo-card__like-counter like-counter">
+                  <p class="like-counter__number">1350</p>
+                </div>
               </div>
             </li>
             <li class="gallery__item photo-card">
               <a class="photo-card__link" href="#">
                 <img class="photo-card__image" src="./img/gallery/gallery-02.jpg" width="280" height="280" alt="Диковинное растение, похожее на кактус."/>
               </a>
-              <h3 class="photo-card__title title">Местная растительность</h3>
-              <p class="photo-card__author">Автор фото: Сергей</p>
-              <div class="photo-card__like-counter like-counter">
-                <p class="like-counter__number">143</p>
+              <div class="photo-card__info">
+                <div class="photo-card__text">
+                  <h3 class="photo-card__title title">Местная растительность</h3>
+                  <p class="photo-card__author">Автор фото: Сергей</p>
+                </div>
+                <div class="photo-card__like-counter like-counter">
+                  <p class="like-counter__number">143</p>
+                </div>
               </div>
             </li>
             <li class="gallery__item photo-card">
               <a class="photo-card__link" href="#">
                 <img class="photo-card__image" src="./img/gallery/gallery-03.jpg" width="280" height="280"alt="Горная дорога в лесу."/>
               </a>
-              <h3 class="photo-card__title title">Дорога на север</h3>
-              <p class="photo-card__author">Автор фото: Петр</p>
-              <div class="photo-card__like-counter like-counter">
-                <p class="like-counter__number">96</p>
+              <div class="photo-card__info">
+                <div class="photo-card__text">
+                  <h3 class="photo-card__title title">Дорога на север</h3>
+                  <p class="photo-card__author">Автор фото: Петр</p>
+                </div>
+                <div class="photo-card__like-counter like-counter">
+                  <p class="like-counter__number">96</p>
+                </div>
               </div>
             </li>
             <li class="gallery__item photo-card">
               <a class="photo-card__link" href="#">
                 <img class="photo-card__image" src="./img/gallery/gallery-04.jpg" width="280" height="280" alt="Каменный мост в каньоне."/>
               </a>
-              <h3 class="photo-card__title title">Мост дьявола</h3>
-              <p class="photo-card__author">Автор фото: Антон</p>
-              <div class="photo-card__like-counter like-counter">
-                <p class="like-counter__number">254</p>
+              <div class="photo-card__info">
+                <div class="photo-card__text">
+                  <h3 class="photo-card__title title">Мост дьявола</h3>
+                  <p class="photo-card__author">Автор фото: Антон</p>
+                </div>
+                <div class="photo-card__like-counter like-counter">
+                  <p class="like-counter__number">254</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -149,5 +165,6 @@
         </a>
       </footer>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

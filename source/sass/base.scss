@@ -15,7 +15,20 @@
   box-sizing: border-box;
 }
 
+.body {
+  background-color: $grey-bg;
+}
+
 .container {
-  width: 320px;
   margin: 0 auto;
+  width: 320px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

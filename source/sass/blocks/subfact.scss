@@ -1,6 +1,26 @@
+.subfact {
+  padding: 22px 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 60px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding: 60px 60px 80px;
+  }
+}
+
 .subfact__text {
   position: relative;
   padding-left: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 102px;
+    padding-left: 0;
+    text-align: center;
+  }
 
   &--home::before {
     content: "";
@@ -11,6 +31,14 @@
     height: 40px;
     background-image: url("../img/subfact/home-icon.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/subfact/home-icon-l.svg");
+    }
   }
 
   &--food::before {
@@ -22,6 +50,14 @@
     height: 40px;
     background-image: url("../img/subfact/food-icon.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/subfact/food-icon-l.svg");
+    }
   }
 
   &--souvenir::before {
@@ -33,6 +69,14 @@
     height: 40px;
     background-image: url("../img/subfact/souvenir-icon.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 75px;
+      height: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/subfact/souvenir-icon-l.svg");
+    }
   }
 }
 
