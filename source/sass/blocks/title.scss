@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     &--lined {
       position: relative;
-      
+
       &::before {
         content: "";
         position: absolute;
