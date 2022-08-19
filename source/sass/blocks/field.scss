@@ -5,7 +5,7 @@
     content: "";
     position: absolute;
     right: 0;
-    width: 21%;
+    width: 58px;
     height: 58px;
     background-color: $grey-dark;
     background-image: url("../img/form/phone.svg");
@@ -17,7 +17,7 @@
     content: "";
     position: absolute;
     right: 0;
-    width: 21%;
+    width: 58px;
     height: 58px;
     background-color: $grey-dark;
     background-image: url("../img/form/mail.svg");
@@ -46,10 +46,6 @@
 
 .field__input {
   width: 100%;
-
-  &--size-s {
-    width: 79%;
-  }
 }
 
 .field__custom {

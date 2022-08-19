@@ -1,11 +1,32 @@
 .group {
+  position: relative;
   padding: 24px 0 40px;
   border-top: 1px solid $grey-second;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &--lined {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        right: -35px;
+        border-left: 1px solid $grey-border;
+        height: 338px;
+      }
+    }
+  }
 }
 
 .group__legend {
+  position: relative;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .group__list {

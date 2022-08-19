@@ -24,7 +24,7 @@
   text-align: center;
 
   @media (min-width: $desktop-width) {
-    padding: 0 96px 48px;
+    padding: 24px 96px 48px;
   }
 }
 
@@ -48,4 +48,8 @@
   color: $grey-subtext;
   text-align: right;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $black-light;
+  }
 }

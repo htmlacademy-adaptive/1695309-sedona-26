@@ -3,6 +3,7 @@
   border-top: 1px solid $grey-second;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding: 0;
     border-top: none;
 
@@ -31,26 +32,41 @@
     padding: 20px;
     background-color: $grey-bg;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .photo-card__text {
+  padding-right: 20px;
   margin-bottom: 10px;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
   }
 }
 
 .photo-card__title {
   font-size: 14px;
   line-height: 21px;
-  color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .photo-card__author {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
-  color: $black;
 }

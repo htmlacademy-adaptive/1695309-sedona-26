@@ -1,6 +1,10 @@
 .textarea__label {
   display: block;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .textarea__input {
