@@ -4,6 +4,7 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  font-family: inherit;
   color: $white;
   background-color: $blue;
   text-transform: uppercase;
@@ -16,6 +17,18 @@
 
   &--form {
     padding: 18px 34px 14px;
+
+    @media (max-width: $mobile-only) {
+      width: 100%;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 384px;
+    }
   }
 
   &--modal {

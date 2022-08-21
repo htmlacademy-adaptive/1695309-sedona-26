@@ -5,6 +5,10 @@
   top: 0;
   left: 0;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
 .navigation__list {
@@ -15,12 +19,17 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     z-index: 0;
-    grid-auto-flow: dense;
+  }
+}
 
-    &::before {
-      content: "";
-      display: block;
-      grid-column: 3 / 4;
+.navigation__item {
+  @media (min-width: $tablet-width) {
+    &:nth-child(3) {
+      grid-column: 4 / 5;
+    }
+
+    &:nth-child(7) {
+      grid-column: 4 / 5;
     }
   }
 }
@@ -41,7 +50,7 @@
 
   @media (min-width: $tablet-width) {
     height: 100%;
-    padding: 15px 10px;
+    padding: 18px 10px 17px;
     font-size: 14px;
     line-height: 21px;
     color: $black;

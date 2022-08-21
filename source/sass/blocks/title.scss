@@ -6,8 +6,23 @@
   font-weight: 700;
   color: $black;
   text-transform: uppercase;
-}
 
-.title--light {
-  color: $white;
+  &--light {
+    color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--lined {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        border-top: 1px solid $grey-border;
+        width: 100%;
+      }
+    }
+  }
 }

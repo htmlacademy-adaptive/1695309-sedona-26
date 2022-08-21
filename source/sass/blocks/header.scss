@@ -2,16 +2,15 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: 56px;
+  min-height: 56px;
 }
 
 .header__logo {
   display: block;
-  position: relative;
+  position: absolute;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
