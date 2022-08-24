@@ -1,5 +1,6 @@
 .fact {
   position: relative;
+  background-color: $grey;
 
   &--row {
     @media (min-width: $tablet-width) {
@@ -60,9 +61,11 @@
   }
 
   &--line {
+    margin: 0 20px;
     border-bottom: 1px solid $grey-border;
 
     @media (min-width: $tablet-width) {
+      margin: 0;
       border: none;
     }
   }
@@ -97,7 +100,9 @@
 
 .fact__image {
   display: block;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;

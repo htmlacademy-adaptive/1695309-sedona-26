@@ -13,9 +13,9 @@
 
 .navigation__list {
   @include list-reset;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     z-index: 0;
@@ -46,6 +46,8 @@
   background-color: $blue;
   text-decoration: none;
   text-align: center;
+  border-bottom: 1px solid rgba($black, 0.2);
+  border-top: 1px solid rgba($white, 0.2);
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -55,6 +57,7 @@
     line-height: 21px;
     color: $black;
     background-color: $white;
+    border: none;
 
     &--current {
       color: $brown;
@@ -143,6 +146,15 @@
   width: 23px;
   height: 4px;
   background-color: $blue;
+}
+
+.navigation--opened .navigation__list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .navigation--opened .navigation__toggle-dash {

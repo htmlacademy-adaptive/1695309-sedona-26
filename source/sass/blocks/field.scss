@@ -32,6 +32,7 @@
   color: $black-light;
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
 
   &--custom {
     display: flex;
@@ -40,12 +41,17 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+    text-transform: none;
     cursor: pointer;
   }
 }
 
 .field__input {
   width: 100%;
+
+  &:focus {
+    outline: 2px solid $black;
+  }
 }
 
 .field__custom {

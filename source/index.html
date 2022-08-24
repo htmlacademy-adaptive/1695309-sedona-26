@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicon/favicon-32.png">
+    <link rel="icon" href="./img/favicon/favicon-32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/apple-icon-180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="body">
@@ -49,14 +55,19 @@
           <ol class="features__list">
             <li class="features__item-wrap">
               <div class="fact fact--row">
-                <div class="fact__card fact__card--light fact__card--line fact__card--masked">
+                <div class="fact__card fact__card--light fact__card--masked">
                   <div class="fact__text">
                     <h2 class="fact__title title title--light">Настоящий городок</h2>
                     <span class="fact__number">№1</span>
                     <p class="fact__description description description--light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                   </div>
                 </div>
-                <img class="fact__image" src="./img/features/features-001.jpg" width="320" height="256" alt="Улица Седоны."/>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/features/features-01-desktop.jpg 1x, ./img/features/features-01-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/features/features-01-tablet.jpg 1x, ./img/features/features-01-tablet@2x.jpg 2x">
+                  <img class="fact__image" src="./img/features/features-01.jpg" srcset="./img/features/features-01@2x.jpg 2x"  width="320" height="260" alt="Улица Седоны."/>
+                </picture>
+
               </div>
 
               <ul class="sublist">
@@ -83,19 +94,23 @@
 
             <li class="features__item-wrap">
               <div class="fact fact--row fact--reversed">
-                <div class="fact__card fact__card--light fact__card--line">
+                <div class="fact__card fact__card--light">
                   <div class="fact__text">
                     <h2 class="fact__title title title--light">Там есть мост дьявола</h2>
                     <span class="fact__number">№2</span>
                     <p class="fact__description description description--light">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
                 </div>
-                <img class="fact__image" src="./img/features/features-002.jpg" width="320" height="256" alt="Мост дьявола."/>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/features/features-02-desktop.jpg 1x, ./img/features/features-02-desktop@2x.jpg 2x,">
+                  <source media="(min-width: 768px)" srcset="./img/features/features-02-tablet.jpg 1x, ./img/features/features-02-tablet@2x.jpg 2x">
+                  <img class="fact__image" src="./img/features/features-02.jpg" srcset="./img/features/features-02@2x.jpg 2x" width="320" height="260" alt="Мост дьявола."/>
+                </picture>
               </div>
             </li>
 
             <li class="features__item fact">
-              <div class="fact__card">
+              <div class="fact__card fact__card--line">
                 <div class="fact__text fact__text--line fact__text--margin">
                   <h2 class="fact__title title">Небольшая площадь</h2>
                   <span class="fact__number">№3</span>
@@ -105,7 +120,7 @@
             </li>
 
             <li class="features__item fact">
-                <div class="fact__card">
+                <div class="fact__card fact__card--line">
                   <div class="fact__text fact__text--line">
                     <h2 class="fact__title title">Красивая дорога</h2>
                     <span class="fact__number">№4</span>
