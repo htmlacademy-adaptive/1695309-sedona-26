@@ -8,7 +8,7 @@
     width: 58px;
     height: 58px;
     background-color: $grey-dark;
-    background-image: url("../img/form/phone.svg");
+    background-image: url("../img/decor-icons/phone.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -20,7 +20,7 @@
     width: 58px;
     height: 58px;
     background-color: $grey-dark;
-    background-image: url("../img/form/mail.svg");
+    background-image: url("../img/decor-icons/mail.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -92,7 +92,7 @@
   transform: translate(-50%, -50%);
   width: 22px;
   height: 16px;
-  background-image: url("../img/form/tick.svg");
+  background-image: url("../img/decor-icons/tick.svg");
 }
 
 .field__radio:focus + .field__custom--radio {
@@ -115,7 +115,7 @@
 
 .field__label--checkbox:active {
   .field__custom--checkbox::before {
-    background-image: url("../img/form/tick-opacity.svg");
+    opacity: 0.3;
   }
 
   .field__custom {

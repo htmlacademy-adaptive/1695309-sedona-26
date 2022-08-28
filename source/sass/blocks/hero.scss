@@ -27,20 +27,12 @@
     content: "";
     left: 0;
     bottom: 0;
-    height: 57px;
     width: 100%;
+    height: 57px;
     position: absolute;
-    background-image: url("../img/hero/hero-mask.png");
-    background-size: 100% auto;
+    background-image: url("../img/decor-icons/divider.svg");
+    background-position: center;
     background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/hero/hero-mask-tablet.png");
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url("../img/hero/hero-mask-desktop.png");
-    }
   }
 
   &--small {
