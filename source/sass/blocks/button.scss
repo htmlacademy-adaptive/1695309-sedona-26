@@ -50,4 +50,13 @@
     background-color: $grey-second;
     cursor: auto;
   }
+
+  &--disabled {
+    background-color: $grey-second;
+    cursor: auto;
+
+    &:hover {
+      background-color: $grey-second;
+    }
+  }
 }

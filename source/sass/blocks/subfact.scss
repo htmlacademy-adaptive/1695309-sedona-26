@@ -29,15 +29,15 @@
     left: 0;
     width: 40px;
     height: 40px;
-    background-image: url("../img/subfact/home-icon.svg");
+    background-image: url("../img/decor-icons/home-icon.svg");
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-width: $tablet-width) {
       width: 75px;
       height: 75px;
       left: 50%;
       transform: translateX(-50%);
-      background-image: url("../img/subfact/home-icon-l.svg");
     }
   }
 
@@ -48,15 +48,15 @@
     left: 0;
     width: 40px;
     height: 40px;
-    background-image: url("../img/subfact/food-icon.svg");
+    background-image: url("../img/decor-icons/food-icon.svg");
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-width: $tablet-width) {
       width: 75px;
       height: 75px;
       left: 50%;
       transform: translateX(-50%);
-      background-image: url("../img/subfact/food-icon-l.svg");
     }
   }
 
@@ -67,15 +67,15 @@
     left: 0;
     width: 40px;
     height: 40px;
-    background-image: url("../img/subfact/souvenir-icon.svg");
+    background-image: url("../img/decor-icons/souvenir-icon.svg");
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-width: $tablet-width) {
       width: 75px;
       height: 75px;
       left: 50%;
       transform: translateX(-50%);
-      background-image: url("../img/subfact/souvenir-icon-l.svg");
     }
   }
 }

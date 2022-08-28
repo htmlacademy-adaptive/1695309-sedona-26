@@ -8,7 +8,7 @@
     width: 58px;
     height: 58px;
     background-color: $grey-dark;
-    background-image: url("../img/form/phone.svg");
+    background-image: url("../img/decor-icons/phone.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -20,7 +20,7 @@
     width: 58px;
     height: 58px;
     background-color: $grey-dark;
-    background-image: url("../img/form/mail.svg");
+    background-image: url("../img/decor-icons/mail.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
@@ -70,10 +70,6 @@
   &:hover {
     background-color: $grey-second;
   }
-
-  &:active {
-    background-color: $grey-dark-second;
-  }
 }
 
 .field__radio:checked + .field__custom--radio::before {
@@ -96,19 +92,33 @@
   transform: translate(-50%, -50%);
   width: 22px;
   height: 16px;
-  background-image: url("../img/form/tick.svg");
+  background-image: url("../img/decor-icons/tick.svg");
 }
 
-.field__label--custom:active .field__custom--radio::before {
-  background-color: $black-light-opacity;
+.field__radio:focus + .field__custom--radio {
+  outline: 2px solid $black;
 }
 
-.field__label--checkbox:active {
+.field__checkbox:focus + .field__custom--checkbox {
+  outline: 2px solid $black;
+}
+
+.field__label--custom:active {
+  .field__custom--radio::before {
+    background-color: $black-light-opacity;
+  }
+
   .field__custom {
     background-color: $grey-dark-second;
   }
+}
 
+.field__label--checkbox:active {
   .field__custom--checkbox::before {
-    opacity: 0.7;
+    opacity: 0.3;
+  }
+
+  .field__custom {
+    background-color: $grey-dark-second;
   }
 }
