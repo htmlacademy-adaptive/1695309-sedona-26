@@ -12,6 +12,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
+import cheerio from 'gulp-cheerio';
 
 // Styles
 
@@ -82,6 +83,12 @@ const optimizeSVG = () => {
 const sprite = () => {
   return gulp.src('source/img/sprite-icons/*.svg')
     .pipe(svgo())
+      .pipe(cheerio({
+        run: ($) => {
+            $('[fill]').removeAttr('fill');
+        },
+        parserOptions: { xmlMode: true }
+    }))
     .pipe(svgstore({
       inlineSvg: true
     }))
