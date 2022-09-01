@@ -9,7 +9,9 @@
     <link rel="icon" href="./img/favicon/favicon-32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicon/apple-icon-180.png">
     <link rel="manifest" href="./manifest.webmanifest">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="./fonts/ptsansbold.woff2 " as="font" type="font/woff2">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="body">
     <div class="container">
@@ -66,7 +68,6 @@
                   <source type="image/webp" media="(min-width: 1200px)" srcset="./img/features/features-01-desktop.webp 1x, ./img/features/features-01-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/features/features-01-tablet.webp 1x, ./img/features/features-01-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/features/features-01.webp 1x, ./img/features/features-01@2x.webp 2x"/>
-
                   <source media="(min-width: 1200px)" srcset="./img/features/features-01-desktop.jpg 1x, ./img/features/features-01-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/features/features-01-tablet.jpg 1x, ./img/features/features-01-tablet@2x.jpg 2x">
                   <img class="fact__image" src="./img/features/features-01.jpg" srcset="./img/features/features-01@2x.jpg 2x"  width="320" height="260" alt="Улица Седоны."/>
@@ -109,7 +110,6 @@
                   <source type="image/webp" media="(min-width: 1200px)" srcset="./img/features/features-02-desktop.webp 1x, ./img/features/features-02-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/features/features-02-tablet.webp 1x, ./img/features/features-02-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/features/features-02.webp 1x, ./img/features/features-02@2x.webp 2x"/>
-
                   <source media="(min-width: 1200px)" srcset="./img/features/features-02-desktop.jpg 1x, ./img/features/features-02-desktop@2x.jpg 2x,">
                   <source media="(min-width: 768px)" srcset="./img/features/features-02-tablet.jpg 1x, ./img/features/features-02-tablet@2x.jpg 2x">
                   <img class="fact__image" src="./img/features/features-02.jpg" srcset="./img/features/features-02@2x.jpg 2x" width="320" height="260" alt="Мост дьявола."/>
@@ -173,7 +173,7 @@
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
               <svg class="social__link-icon" width="24" height="24">
-                <use href="./img/sprite.svg#icon-vk"></use>
+                <use href="./img/sprite.svg#vk"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
@@ -181,7 +181,7 @@
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer">
               <svg class="social__link-icon" width="24" height="24">
-                <use href="./img/sprite.svg#icon-telegram"></use>
+                <use href="./img/sprite.svg#telegram"></use>
               </svg>
               <span class="visually-hidden">Телеграм</span>
             </a>
@@ -189,7 +189,7 @@
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noopener noreferrer">
               <svg class="social__link-icon" width="24" height="24">
-                <use href="./img/sprite.svg#icon-youtube"></use>
+                <use href="./img/sprite.svg#youtube"></use>
               </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
@@ -198,7 +198,7 @@
         <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
           <span class="footer__logo-text">Разработано</span>
           <svg class="footer__logo-icon" width="36" height="36">
-            <use href="./img/sprite.svg#icon-academy"></use>
+            <use href="./img/sprite.svg#htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Академии</span>
         </a>
