@@ -9,6 +9,13 @@
   @media (min-width: $tablet-width) {
     position: static;
   }
+
+  &--nojs {
+    @media (max-width: $mobile-only) {
+      position: relative;
+      margin-top: 96px;
+    }
+  }
 }
 
 .navigation__list {
