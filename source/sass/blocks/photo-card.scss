@@ -1,5 +1,5 @@
 .photo-card {
-  padding: 25px 0;
+  padding: 22px 0 28px;
   border-top: 1px solid $grey-second;
 
   @media (max-width: $mobile-only) {
@@ -50,7 +50,7 @@
 
 .photo-card__text {
   padding-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   color: $black;
 
   @media (min-width: $tablet-width) {

@@ -36,13 +36,18 @@
   }
 
   &--small {
-    padding: 52px 46px 60px;
+    padding: 52px 46px 65px;
     background-image: url("../img/hero/hero-small.jpg");
     background-position: 0 100%;
 
     @media (min-width: $tablet-width) {
-      padding: 102px 46px 120px;
+      padding: 90px 46px 120px;
       background-image: url("../img/hero/hero-small-tablet.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 101px 46px 120px;
+      background-image: url("../img/hero/hero-small-desktop.jpg");
     }
   }
 }
