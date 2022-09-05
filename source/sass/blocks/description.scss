@@ -1,10 +1,18 @@
 .description {
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: $black-light;
   text-transform: uppercase;
+
+  br {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
 }
 
 .description--light {

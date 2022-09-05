@@ -16,26 +16,24 @@
 }
 
 .fact__card {
-  padding: 40px 20px 35px;
+  padding: 40px 20px;
   background-color: $grey;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 256px;
     min-height: 256px;
-    padding: 40px 32px;
+    padding: 42px 36px;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
-    padding: 50px 78px;
+    padding: 50px;
   }
 
   &--masked {
-    padding-top: 70px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 40px;
+    @media (max-width: $mobile-only) {
+      padding-top: 70px;
     }
 
     &::before {
@@ -69,13 +67,23 @@
       border: none;
     }
   }
+
+  &--size-s {
+    @media (max-width: $mobile-only) {
+      padding: 22px 20px 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 42px 36px 28px;
+    }
+  }
 }
 
 .fact__title {
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    max-width: 128px;
+    max-width: 150px;
     margin: 0 auto;
     margin-bottom: 18px;
   }
@@ -86,7 +94,7 @@
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 15px;
   }
 
   &::before {

@@ -1,9 +1,9 @@
 .footer {
-  padding: 22px 20px 28px;
+  padding: 36px 20px 28px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 45px;
+    padding: 28px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@
   @include list-reset;
   max-width: 200px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -44,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 6px;
   text-decoration: none;
   color: $black;
 
@@ -58,4 +59,10 @@
 
 .footer__logo-icon {
   fill: currentColor;
+}
+
+.footer__logo-text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
