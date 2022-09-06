@@ -1,11 +1,7 @@
 .textarea__label {
   display: block;
-  margin-bottom: 20px;
+  font-weight: 700;
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
-  }
 }
 
 .textarea__input {
@@ -16,5 +12,9 @@
 
   @media (min-width: $tablet-width) {
     min-height: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
   }
 }

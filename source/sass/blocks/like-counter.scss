@@ -2,10 +2,14 @@
   position: relative;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 14px;
 
   &::before {
     content: "";
+    position: relative;
+    left: 5px;
+    top: -2px;
     display: block;
     width: 23px;
     height: 23px;

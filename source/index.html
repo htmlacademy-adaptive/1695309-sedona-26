@@ -9,8 +9,8 @@
     <link rel="icon" href="./img/favicon/favicon-32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicon/apple-icon-180.png">
     <link rel="manifest" href="./manifest.webmanifest">
-    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="./fonts/ptsansbold.woff2 " as="font" type="font/woff2">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff2 " as="font">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="body">
@@ -51,7 +51,7 @@
             <h1 class="features__title title">
               Седона — небольшой городок в Аризоне, заслуживающий&nbsp;большего!
             </h1>
-            <p class="features__description description description--size-s">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+            <p class="features__description description description--size_s">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
 
           <ol class="features__list">
@@ -70,28 +70,28 @@
                   <source type="image/webp" srcset="./img/features/features-01.webp 1x, ./img/features/features-01@2x.webp 2x"/>
                   <source media="(min-width: 1200px)" srcset="./img/features/features-01-desktop.jpg 1x, ./img/features/features-01-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/features/features-01-tablet.jpg 1x, ./img/features/features-01-tablet@2x.jpg 2x">
-                  <img class="fact__image" src="./img/features/features-01.jpg" srcset="./img/features/features-01@2x.jpg 2x"  width="320" height="260" alt="Улица Седоны."/>
+                  <img class="fact__image" src="./img/features/features-01.jpg" srcset="./img/features/features-01@2x.jpg 2x"  width="320" height="260" loading="lazy" alt="Улица Седоны."/>
                 </picture>
 
               </div>
 
               <ul class="sublist">
                 <li class="sublist__subfact subfact">
-                  <div class="subfact__text subfact__text--home">
+                  <div class="subfact__text subfact__icon subfact__icon--home">
                     <h3 class="subfact__title title">Жильё</h3>
-                    <p class="subfact__description description description--size-s">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    <p class="subfact__description description description--size_s">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                   </div>
                 </li>
                 <li class="sublist__subfact subfact">
-                  <div class="subfact__text subfact__text--food">
+                  <div class="subfact__text subfact__icon subfact__icon--food">
                     <h3 class="subfact__title title">Еда</h3>
-                    <p class="subfact__description description description--size-s">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <p class="subfact__description description description--size_s">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
                   </div>
                 </li>
                 <li class="sublist__subfact subfact">
-                  <div class="subfact__text subfact__text--souvenir">
+                  <div class="subfact__text subfact__icon subfact__icon--souvenir">
                     <h3 class="subfact__title title">Сувениры</h3>
-                    <p class="subfact__description description description--size-s">Не только китайского, но и местного производства!</p>
+                    <p class="subfact__description description description--size_s">Не только китайского,<br>но и местного&nbsp;производства!</p>
                   </div>
                 </li>
               </ul>
@@ -103,22 +103,22 @@
                   <div class="fact__text">
                     <h2 class="fact__title title title--light">Там есть мост дьявола</h2>
                     <span class="fact__number">№2</span>
-                    <p class="fact__description description description--light">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                    <p class="fact__description description description--light">Да, по нему можно пройти!<br>&nbsp;Если&nbsp;вы осмелитесь,&nbsp;конечно</p>
                   </div>
                 </div>
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="./img/features/features-02-desktop.webp 1x, ./img/features/features-02-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/features/features-02-tablet.webp 1x, ./img/features/features-02-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/features/features-02.webp 1x, ./img/features/features-02@2x.webp 2x"/>
-                  <source media="(min-width: 1200px)" srcset="./img/features/features-02-desktop.jpg 1x, ./img/features/features-02-desktop@2x.jpg 2x,">
+                  <source media="(min-width: 1200px)" srcset="./img/features/features-02-desktop.jpg 1x, ./img/features/features-02-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/features/features-02-tablet.jpg 1x, ./img/features/features-02-tablet@2x.jpg 2x">
-                  <img class="fact__image" src="./img/features/features-02.jpg" srcset="./img/features/features-02@2x.jpg 2x" width="320" height="260" alt="Мост дьявола."/>
+                  <img class="fact__image" src="./img/features/features-02.jpg" srcset="./img/features/features-02@2x.jpg 2x" width="320" height="260" loading="lazy" alt="Мост дьявола."/>
                 </picture>
               </div>
             </li>
 
             <li class="features__item fact">
-              <div class="fact__card fact__card--line">
+              <div class="fact__card fact__card--line fact__card--size_s">
                 <div class="fact__text fact__text--line fact__text--margin">
                   <h2 class="fact__title title">Небольшая площадь</h2>
                   <span class="fact__number">№3</span>
@@ -128,17 +128,17 @@
             </li>
 
             <li class="features__item fact">
-                <div class="fact__card fact__card--line">
+                <div class="fact__card fact__card--line fact__card--size_s">
                   <div class="fact__text fact__text--line">
                     <h2 class="fact__title title">Красивая дорога</h2>
                     <span class="fact__number">№4</span>
-                    <p class="fact__description description">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+                    <p class="fact__description description">Ехать в Седону из Лас&#8209;Вегаса совсем не&nbsp;скучно!</p>
                   </div>
                 </div>
             </li>
 
             <li class="features__item fact">
-                <div class="fact__card">
+                <div class="fact__card fact__card--size_s">
                   <div class="fact__text">
                     <h2 class="fact__title title">Мало туристов</h2>
                     <span class="fact__number">№5</span>
@@ -154,7 +154,7 @@
             <div class="search__text">
               <h2 class="search__title">Заинтересовались?</h2>
               <p class="search__description description">
-                Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам лучшие
+                Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
                 предложения гостиниц в Седоне
               </p>
             </div>
@@ -163,7 +163,9 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Посмотреть на карте</h2>
-          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52176.22472019134!2d-111.64306413310126!3d35.181202485524445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2z0KTQu9Cw0LPRgdGC0LDRhNGELCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660628310159!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map__wrap">
+            <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52176.22472019134!2d-111.64306413310126!3d35.181202485524445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2z0KTQu9Cw0LPRgdGC0LDRhNGELCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660628310159!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </section>
       </main>
 
@@ -204,6 +206,6 @@
         </a>
       </footer>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>

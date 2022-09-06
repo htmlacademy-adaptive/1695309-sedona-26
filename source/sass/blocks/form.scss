@@ -15,7 +15,15 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 70px;
+    column-gap: 85px;
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
   }
 }
 
@@ -23,8 +31,13 @@
   padding: 24px 0 16px;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 24px 96px 48px;
+    padding: 28px 96px;
   }
 }
 
@@ -50,6 +63,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
     color: $black-light;
   }
 }

@@ -9,8 +9,8 @@
     <link rel="icon" href="./img/favicon/favicon-32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicon/apple-icon-180.png">
     <link rel="manifest" href="./manifest.webmanifest">
-    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="./fonts/ptsansbold.woff2 " as="font" type="font/woff2">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff2 " as="font">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="body">
@@ -75,12 +75,12 @@
               </div>
               <div class="form__group group">
                 <h2 class="group__legend title">Контактная информация:</h2>
-                <ul class="group__list">
-                  <li class="group__item field field--phone">
+                <ul class="group__list group__list--contacts">
+                  <li class="group__item field field-icon field-icon--phone">
                     <label class="field__label" for="phone">Контактный телефон*:</label>
                     <input class="field__input input field__input--size-s" type="tel" id="phone" name="user-phone" placeholder="Введите телефон" required/>
                   </li>
-                  <li class="group__item field field--mail">
+                  <li class="group__item field field-icon field-icon--mail">
                     <label class="field__label" for="email">Электронная почта*:</label>
                     <input class="field__input input field__input--size-s" type="email" id="email" name="user-email" placeholder="Введите e-mail" required/>
                   </li>
@@ -88,7 +88,7 @@
               </div>
             </div>
 
-            <div class="form__group group">
+            <div class="form__group group group--padding_s">
               <h2 class="group__legend title title--lined"><span class="legend-wrap">Ваше общее впечатление:</span></h2>
               <ul class="group__list group__list--experience">
                 <li class="group__item field">
@@ -112,7 +112,7 @@
                 </li>
               </ul>
             </div>
-            <div class="form__group group">
+            <div class="form__group group group--padding_s">
               <h2 class="group__legend title title--lined"><span class="legend-wrap">Посещенные достопримечательности:</span></h2>
               <ul class="group__list group__list--visited">
                 <li class="group__item field">
@@ -201,20 +201,20 @@
         <div class="modal__text">
           <h2 class="modal__title title">Что-то пошло не&nbsp;так!</h2>
           <p class="modal__description description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="modal__button button button--modal" type="button">Ок</button>
+          <button class="modal__button button button--modal button--error" type="button">Ок</button>
         </div>
       </div>
 
       <div class="modal modal--success modal--closed">
-        <div class="modal__text">
+        <div class="modal__text modal__text--success">
           <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
           <p class="modal__description modal__description--success description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="modal__button-wrap">
-          <button class="modal__button button button--modal" type="button">Закрыть&nbsp;окно</button>
+          <button class="modal__button button button--modal button--success" type="button">Закрыть&nbsp;окно</button>
         </div>
       </div>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>

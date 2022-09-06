@@ -42,6 +42,7 @@ const html = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
+    .pipe(rename('script.min.js'))
     .pipe(gulp.dest('build/js'));
 }
 
@@ -63,7 +64,7 @@ const copyImages = () => {
 // WebP
 
 const createWebP = () => {
-  return gulp.src('source/img/**/*.jpg')
+  return gulp.src(['source/img/**/*.jpg', '!source/img/hero/*.jpg', '!source/img/map/*.jpg', '!source/img/video/*.jpg'])
     .pipe(squoosh({
       webp: {
         quality: 60,
@@ -131,12 +132,19 @@ const server = (done) => {
   done();
 }
 
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+  }
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 

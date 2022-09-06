@@ -9,8 +9,8 @@
     <link rel="icon" href="./img/favicon/favicon-32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicon/apple-icon-180.png">
     <link rel="manifest" href="./manifest.webmanifest">
-    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="./fonts/ptsansbold.woff2 " as="font" type="font/woff2">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff2 " as="font">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="body">
@@ -63,7 +63,7 @@
                   <source type="image/webp" srcset="./img/gallery/gallery-01.webp 1x, ./img/gallery/gallery-01@2x.webp 2x"/>
                   <source media="(min-width: 1200px)" srcset="./img/gallery/gallery-01-desktop.jpg 1x, ./img/gallery/gallery-01-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/gallery/gallery-01-tablet.jpg 1x, ./img/gallery/gallery-01-tablet@2x.jpg 2x">
-                  <img class="photo-card__image" src="./img/gallery/gallery-01.jpg" srcset="./img/gallery/gallery-01@2x.jpg 2x" width="280" height="280" alt="Дорога и горы."/>
+                  <img class="photo-card__image" src="./img/gallery/gallery-01.jpg" srcset="./img/gallery/gallery-01@2x.jpg 2x" width="280" height="280" loading="lazy" alt="Дорога и горы."/>
                 </picture>
 
               </a>
@@ -85,7 +85,7 @@
                   <source type="image/webp" srcset="./img/gallery/gallery-02.webp 1x, ./img/gallery/gallery-02@2x.webp 2x"/>
                   <source media="(min-width: 1200px)" srcset="./img/gallery/gallery-02-desktop.jpg 1x, ./img/gallery/gallery-02-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/gallery/gallery-02-tablet.jpg 1x, ./img/gallery/gallery-02-tablet@2x.jpg 2x">
-                  <img class="photo-card__image" src="./img/gallery/gallery-02.jpg" srcset="./img/gallery/gallery-02@2x.jpg 2x" width="280" height="280" alt="Диковинное растение, похожее на кактус."/>
+                  <img class="photo-card__image" src="./img/gallery/gallery-02.jpg" srcset="./img/gallery/gallery-02@2x.jpg 2x" width="280" height="280" loading="lazy" alt="Диковинное растение, похожее на кактус."/>
                 </picture>
               </a>
               <div class="photo-card__info">
@@ -106,7 +106,7 @@
                   <source type="image/webp" srcset="./img/gallery/gallery-03.webp 1x, ./img/gallery/gallery-03@2x.webp 2x"/>
                   <source media="(min-width: 1200px)" srcset="./img/gallery/gallery-03-desktop.jpg 1x, ./img/gallery/gallery-03-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/gallery/gallery-03-tablet.jpg 1x, ./img/gallery/gallery-03-tablet@2x.jpg 2x">
-                  <img class="photo-card__image" src="./img/gallery/gallery-03.jpg" srcset="./img/gallery/gallery-03@2x.jpg 2x" width="280" height="280" alt="Горная дорога в лесу."/>
+                  <img class="photo-card__image" src="./img/gallery/gallery-03.jpg" srcset="./img/gallery/gallery-03@2x.jpg 2x" width="280" height="280" loading="lazy" alt="Горная дорога в лесу."/>
                 </picture>
               </a>
               <div class="photo-card__info">
@@ -127,7 +127,7 @@
                   <source type="image/webp" srcset="./img/gallery/gallery-04.webp 1x, ./img/gallery/gallery-04@2x.webp 2x"/>
                   <source media="(min-width: 1200px)" srcset="./img/gallery/gallery-04-desktop.jpg 1x, ./img/gallery/gallery-04-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/gallery/gallery-04-tablet.jpg 1x, ./img/gallery/gallery-04-tablet@2x.jpg 2x">
-                  <img class="photo-card__image" src="./img/gallery/gallery-04.jpg" srcset="./img/gallery/gallery-04@2x.jpg 2x" width="280" height="280" alt="Каменный мост в каньоне."/>
+                  <img class="photo-card__image" src="./img/gallery/gallery-04.jpg" srcset="./img/gallery/gallery-04@2x.jpg 2x" width="280" height="280" loading="lazy" alt="Каменный мост в каньоне."/>
                 </picture>
               </a>
               <div class="photo-card__info">
@@ -143,7 +143,7 @@
           </ul>
 
           <div class="gallery__video">
-            <div class="gallery__text">
+            <div class="gallery__video-text">
               <h2 class="gallery__title title">Все еще сомневаетесь?</h2>
               <p class="gallery__description description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </div>
@@ -197,6 +197,6 @@
         </a>
       </footer>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>

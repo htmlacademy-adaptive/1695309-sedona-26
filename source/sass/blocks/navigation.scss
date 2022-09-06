@@ -9,6 +9,13 @@
   @media (min-width: $tablet-width) {
     position: static;
   }
+
+  &--nojs {
+    @media (max-width: $mobile-only) {
+      position: relative;
+      margin-top: 96px;
+    }
+  }
 }
 
 .navigation__list {
@@ -42,7 +49,7 @@
   line-height: 26px;
   text-transform: uppercase;
   display: block;
-  padding: 15px 40px;
+  padding: 16px 40px 12px;
   background-color: $blue;
   text-decoration: none;
   text-align: center;

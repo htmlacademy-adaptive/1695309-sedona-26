@@ -1,29 +1,5 @@
 .field {
   position: relative;
-
-  &--phone::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 58px;
-    height: 58px;
-    background-color: $grey-dark;
-    background-image: url("../img/decor-icons/phone.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
-  &--mail::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 58px;
-    height: 58px;
-    background-color: $grey-dark;
-    background-image: url("../img/decor-icons/mail.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
 }
 
 .field__label {
@@ -37,7 +13,7 @@
   &--custom {
     display: flex;
     align-items: center;
-    padding: 12px 10px 12px 64px;
+    padding: 10px 10px 10px 61px;
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
@@ -54,6 +30,16 @@
   }
 }
 
+.field__radio:disabled + .field__custom {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.field__checkbox:disabled + .field__custom {
+  opacity: 0.3;
+  cursor: default;
+}
+
 .field__custom {
   display: block;
   position: absolute;
@@ -61,6 +47,7 @@
   width: 46px;
   height: 46px;
   background-color: $grey-bg;
+  border-radius: 4px;
   cursor: pointer;
 
   &--radio {

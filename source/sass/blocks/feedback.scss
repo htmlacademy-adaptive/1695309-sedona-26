@@ -3,9 +3,14 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    max-width: 495px;
-    padding: 64px 12px 102px;
+    max-width: 460px;
+    padding: 64px 12px 80px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 116px;
+    padding-bottom: 48px;
   }
 }
 
@@ -13,6 +18,7 @@
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
     font-size: 30px;
     line-height: 26px;
   }

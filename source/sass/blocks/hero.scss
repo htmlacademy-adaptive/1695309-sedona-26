@@ -1,10 +1,14 @@
 .hero {
   position: relative;
-  padding: 90px 20px 73px;
+  padding: 90px 20px 85px;
   background-color: $blue;
   background-image: url("../img/hero/hero.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/hero@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     padding: 77px 154px 90px;
@@ -36,13 +40,30 @@
   }
 
   &--small {
-    padding: 52px 46px 60px;
+    padding: 52px 46px 65px;
     background-image: url("../img/hero/hero-small.jpg");
     background-position: 0 100%;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-small@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
-      padding: 102px 46px 120px;
+      padding: 90px 46px 120px;
       background-image: url("../img/hero/hero-small-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-small-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 101px;
+      background-image: url("../img/hero/hero-small-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-small-desktop@2x.jpg");
+      }
     }
   }
 }
