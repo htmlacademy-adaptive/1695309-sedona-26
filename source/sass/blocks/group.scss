@@ -53,6 +53,12 @@
   margin-bottom: 20px;
   text-align: center;
 
+  &--textarea {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
   }
