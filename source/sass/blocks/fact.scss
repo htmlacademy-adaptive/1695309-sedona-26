@@ -112,8 +112,8 @@
 .fact__image {
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
