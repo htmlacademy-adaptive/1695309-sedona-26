@@ -31,7 +31,11 @@
         height: 338px;
 
         @media (min-width: $tablet-width) {
-          right: -56px;
+          right: -47px;
+        }
+
+        @media (min-width: $desktop-width) {
+          right: -61px;
         }
       }
     }

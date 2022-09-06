@@ -1,5 +1,5 @@
 .footer {
-  padding: 38px 20px 28px;
+  padding: 34px 20px 28px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -44,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
   text-decoration: none;
   color: $black;

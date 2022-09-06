@@ -64,7 +64,7 @@ const copyImages = () => {
 // WebP
 
 const createWebP = () => {
-  return gulp.src('source/img/**/*.jpg')
+  return gulp.src(['source/img/**/*.jpg', '!source/img/hero/*.jpg', '!source/img/map/*.jpg', '!source/img/video/*.jpg'])
     .pipe(squoosh({
       webp: {
         quality: 60,
