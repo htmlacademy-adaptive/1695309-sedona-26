@@ -25,7 +25,15 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 46px;
+    padding: 44px 50px;
+  }
+
+  &--success {
+    padding: 38px 42px 50px;
+
+    @media (min-width: $tablet-width) {
+      padding: 44px 50px 50px;
+    }
   }
 }
 
@@ -42,7 +50,7 @@
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 
   &--success {
@@ -65,8 +73,4 @@
 
 .modal__button {
   margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
 }

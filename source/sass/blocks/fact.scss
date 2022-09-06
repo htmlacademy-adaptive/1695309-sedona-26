@@ -68,7 +68,7 @@
     }
   }
 
-  &--size-s {
+  &--size_s {
     @media (max-width: $mobile-only) {
       padding: 22px 20px 26px;
     }
@@ -80,12 +80,11 @@
 }
 
 .fact__title {
+  margin: 0 auto;
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     max-width: 150px;
-    margin: 0 auto;
-    margin-bottom: 12px;
   }
 }
 

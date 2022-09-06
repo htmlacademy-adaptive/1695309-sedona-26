@@ -13,7 +13,6 @@
 }
 
 .subfact__text {
-  position: relative;
   padding-left: 46px;
 
   @media (min-width: $tablet-width) {
@@ -21,15 +20,18 @@
     padding-left: 0;
     text-align: center;
   }
+}
 
-  &--home::before {
+.subfact__icon {
+  position: relative;
+
+  &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -6px;
     left: 0;
     width: 40px;
     height: 40px;
-    background-image: url("../img/decor-icons/home-icon.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -39,44 +41,18 @@
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+
+  &--home::before {
+    background-image: url("../img/decor-icons/home-icon.svg");
   }
 
   &--food::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
     background-image: url("../img/decor-icons/food-icon.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (min-width: $tablet-width) {
-      width: 75px;
-      height: 75px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 
   &--souvenir::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
     background-image: url("../img/decor-icons/souvenir-icon.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (min-width: $tablet-width) {
-      width: 75px;
-      height: 75px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 }
 

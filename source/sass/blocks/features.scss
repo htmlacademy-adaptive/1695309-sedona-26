@@ -18,22 +18,21 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 120px 56px;
+    max-width: 536px;
+    margin: 0 auto;
+    padding: 48px 20px 56px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 536px;
-    margin: 0 auto;
     padding: 60px 20px 40px;
   }
 }
 
 .features__title {
+  margin: 0 auto;
   margin-bottom: 32px;
 
   @media (max-width: $mobile-only) {
     max-width: 260px;
-    margin: 0 auto;
-    margin-bottom: 32px;
   }
 }

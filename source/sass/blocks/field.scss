@@ -13,7 +13,7 @@
   &--custom {
     display: flex;
     align-items: center;
-    padding: 10px 10px 10px 64px;
+    padding: 10px 10px 10px 61px;
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
@@ -28,6 +28,16 @@
   &:focus {
     outline: 2px solid $black;
   }
+}
+
+.field__radio:disabled + .field__custom {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.field__checkbox:disabled + .field__custom {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .field__custom {
