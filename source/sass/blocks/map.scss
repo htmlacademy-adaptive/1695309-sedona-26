@@ -3,12 +3,15 @@
   height: 350px;
   background-image: url("../img/map/map-mobile.jpg");
   background-repeat: no-repeat;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 3px;
     background-image: url("../img/map/map-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
     background-image: url("../img/map/map-desktop.jpg");
   }
 }

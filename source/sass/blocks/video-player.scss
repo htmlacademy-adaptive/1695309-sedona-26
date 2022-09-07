@@ -49,6 +49,11 @@
   background-color: transparent;
   cursor: pointer;
 
+  @media (max-width: $mobile-only) {
+    position: relative;
+    left: 8px;
+  }
+
   &:hover {
     opacity: 0.7;
   }

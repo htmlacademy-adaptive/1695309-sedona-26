@@ -43,7 +43,11 @@
 
       <main class="main">
         <div class="hero hero--small">
-          <img class="hero__image-text hero__image-text--small" src="./img/hero/hero-text-small.svg" width="230" height="40" alt="На картинке написан текст: Sedona."/>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/hero/text-small-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/hero/hero-text-small.svg">
+            <img class="hero__image-text hero__image-text--small" src="./img/hero/hero-text-small.svg" width="229" height="39" alt="На картинке написан текст: Sedona."/>
+          </picture>
         </div>
 
         <section class="feedback">
@@ -57,7 +61,7 @@
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__group-wrap">
               <div class="form__group group group--lined">
-                <h2 class="group__legend title">Представьтесь:</h2>
+                <h2 class="group__legend group__legend--intro title">Представьтесь:</h2>
                 <ul class="group__list">
                   <li class="group__item field">
                     <label class="field__label" for="name">Имя*:</label>
@@ -74,7 +78,7 @@
                 </ul>
               </div>
               <div class="form__group group">
-                <h2 class="group__legend title">Контактная информация:</h2>
+                <h2 class="group__legend group__legend--contacts title">Контактная информация:</h2>
                 <ul class="group__list group__list--contacts">
                   <li class="group__item field field-icon field-icon--phone">
                     <label class="field__label" for="phone">Контактный телефон*:</label>
@@ -88,7 +92,7 @@
               </div>
             </div>
 
-            <div class="form__group group group--padding-s">
+            <div class="form__group group group--experience">
               <h2 class="group__legend title title--lined"><span class="legend-wrap">Ваше общее впечатление:</span></h2>
               <ul class="group__list group__list--experience">
                 <li class="group__item field">
@@ -112,7 +116,7 @@
                 </li>
               </ul>
             </div>
-            <div class="form__group group group--padding-s">
+            <div class="form__group group group--visited">
               <h2 class="group__legend title title--lined"><span class="legend-wrap">Посещенные достопримечательности:</span></h2>
               <ul class="group__list group__list--visited">
                 <li class="group__item field">
@@ -186,7 +190,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
+        <a class="footer__logo footer__logo--aligned" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
           <span class="footer__logo-text">Разработано</span>
           <svg class="footer__logo-icon" width="36" height="36">
             <use href="./img/sprite.svg#htmlacademy"></use>
