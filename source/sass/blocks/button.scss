@@ -24,6 +24,7 @@
 
     @media (min-width: $tablet-width) {
       width: 324px;
+      padding: 18px 26px 14px 16px;
     }
 
     @media (min-width: $desktop-width) {
@@ -40,7 +41,6 @@
       font-size: 21px;
     }
   }
-
 
   &--error {
     width: 180px;

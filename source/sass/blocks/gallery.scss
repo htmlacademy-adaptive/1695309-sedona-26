@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 480px;
-    padding: 64px 18px;
+    padding: 64px 18px 60px;
     margin: 0 auto;
   }
 
@@ -52,7 +52,7 @@
 }
 
 .gallery__video-text {
-  padding: 18px 24px;
+  padding: 17px 24px;
   text-align: center;
 
   @media (min-width: $tablet-width) {

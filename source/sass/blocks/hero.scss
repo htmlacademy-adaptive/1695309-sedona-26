@@ -49,7 +49,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      padding: 90px 46px 120px;
+      padding: 95px 46px 120px;
       background-image: url("../img/hero/hero-small-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -80,6 +80,11 @@
 
   &--small {
     @media (min-width: $tablet-width) {
+      width: 457px;
+      height: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 460px;
       height: 80px;
     }

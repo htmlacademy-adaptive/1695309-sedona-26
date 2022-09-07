@@ -1,5 +1,5 @@
 .footer {
-  padding: 34px 20px 28px;
+  padding: 30px 20px 28px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -36,7 +36,12 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
+    max-width: 350px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
   }
 }
 
@@ -55,6 +60,14 @@
 
   &:active {
     color: $grey-active;
+  }
+
+  &--aligned {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      left: 2px;
+      bottom: 2px;
+    }
   }
 }
 

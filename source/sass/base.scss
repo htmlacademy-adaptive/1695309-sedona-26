@@ -18,29 +18,3 @@
 html {
   height: 100%;
 }
-
-.body {
-  height: 100%;
-  background-color: $grey-bg;
-}
-
-.container {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 320px;
-  background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
-}
-
-.main {
-  flex-grow: 1;
-}

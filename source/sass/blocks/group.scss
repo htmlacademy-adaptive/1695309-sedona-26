@@ -8,7 +8,8 @@
     padding-left: 20px;
     padding-right: 20px;
 
-    &--padding_s {
+    &--experience,
+    &--visited {
       padding: 24px 20px 22px;
     }
   }
@@ -17,18 +18,23 @@
     padding: 24px 0 20px;
     border: none;
 
-    &--padding_s {
+    &--experience {
       padding: 40px 20px 13px;
+    }
+
+    &--visited {
+      padding: 38px 20px 14px;
     }
 
     &--lined {
       &::before {
         content: "";
         position: absolute;
-        top: 28px;
+        top: 27px;
+        bottom: 3px;
         right: -42px;
         border-left: 1px solid $grey-border;
-        height: 338px;
+
 
         @media (min-width: $tablet-width) {
           right: -47px;
@@ -42,8 +48,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--padding_s {
-      padding: 28px 0;
+    &--experience {
+      padding: 32px 20px 30px;
+    }
+
+    &--visited {
+      padding-top: 23px;
+      padding-bottom: 30px;
     }
   }
 }
@@ -54,7 +65,36 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
+  }
+
+  &--intro {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      left: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 30px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      position: relative;
+      right: 20px;
+
+      @media (min-width: $desktop-width) {
+        right: 15px;
+      }
+    }
+  }
+
+  &--textarea {
+    display: block;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
   }
 }
 
@@ -70,14 +110,15 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 12px;
+      row-gap: 14px;
       padding: 0 12px;
     }
 
     @media (min-width: $desktop-width) {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      padding: 20px 54px 18px;
-      column-gap: 38px;
+      grid-template-columns: 1fr 1fr 248px;
+      column-gap: 30px;
+      padding: 14px 20px 18px 38px;
     }
   }
 
@@ -91,9 +132,9 @@
 
     @media (min-width: $desktop-width) {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      padding: 32px 45px;
-      column-gap: 28px;
+      grid-template-columns: 1fr 1fr 170px 194px;
+      padding: 32px 15px 32px 24px;
+      column-gap: 48px;
     }
   }
 
