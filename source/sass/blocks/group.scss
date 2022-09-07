@@ -25,10 +25,11 @@
       &::before {
         content: "";
         position: absolute;
-        top: 28px;
+        top: 27px;
+        bottom: 3px;
         right: -42px;
         border-left: 1px solid $grey-border;
-        height: 338px;
+
 
         @media (min-width: $tablet-width) {
           right: -47px;
