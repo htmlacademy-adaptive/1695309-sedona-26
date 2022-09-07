@@ -92,10 +92,13 @@
 
   &--textarea {
     display: block;
-    margin-bottom: 0;
     font-weight: 700;
     text-align: center;
   }
+}
+
+.group__legend-wrap {
+  padding: 0 20px;
 }
 
 .group__list {
